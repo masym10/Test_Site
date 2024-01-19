@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.CSS')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><u>Choose queiz</u></h2>
+    </header>
+    <main>
+        <form method="post", action="/index">
+            <select name="quiz">
+                {% for id, name in quizz %}
+                <option value="{{id}}">{{ name }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Start Test</button>
+        </form>
+    </main>
+    <footer>
+        <p>Made for you with love by LogikaSchool</p>
+    </footer>
+</body>
+</html>

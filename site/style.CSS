@@ -1,0 +1,60 @@
+h1, h2, p{
+    font-family: 'Lemon', serif;
+    color: #F99417;
+
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #363062;
+
+}
+
+button {
+    padding: 5px;
+    background-color: #F5F5F5;
+    color: #4D4C7D;
+    border-radius: 20px;
+}
+
+select {
+    padding: 10px;
+    background-color: #F5F5F5;
+    color: #4D4C7D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    background-color: #4D4C7D;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    padding: 20%;
+    margin: 25px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    background-color: #F5F5F5;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -11,7 +11,7 @@ body {
 }
 
 button {
-    padding: 5px;
+    padding: 5px 20px;
     background-color:  #4D4C7D;
     border-color: #363062;
     color: #F5F5F5;
@@ -20,7 +20,7 @@ button {
 
 select {
     border-color: #363062;
-    padding: 10px;
+    padding: 10px 20px;
     background-color:  #4D4C7D;
     color: #F5F5F5;
     border-radius: 5px;
@@ -42,21 +42,20 @@ header {
 
 main {
     padding: 20%;
-    margin: 25px;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-footer {
-    background-color: #F5F5F5;
-    padding: 0px;
     margin: 0px;
     border: 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(https://img.freepik.com/premium-photo/design-style-80s-futuristic-synthesizer-retro-wave-wallpaper-aigenerated_692702-16733.jpg);
+    background-size: cover;
+}
 
+a {
+    color:#F99417;
+    text-decoration: none;
+    background-color:#4D4C7D;
+    padding: 10px 20px;
+    border-radius: 20px;
 }

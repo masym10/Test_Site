@@ -1,6 +1,6 @@
 from flask import Flask, session,render_template, request, redirect, url_for
 from random import shuffle
-from sql_queries import get_question, get_quises, check_answer
+from sql_queries import get_quises, check_answer, get_question_after
 
 def index():
     if request.method == "GET":
@@ -25,11 +25,11 @@ def test():
         session['question_id'] = question_id
         session['total'] += 1
     
-    if check_answer(question_id, answer):
-        session["answer"] += 1
-
-    question = get_question(session["quiz_id"], session["question_id"])
-    
+        if check_answer(question_id, answer):
+            session["answer"] += 1
+    print(session["quiz_id"], session["question_id"])
+    question = get_question_after( session["question_id"], session["quiz_id"])
+    print(question)
     if question == None:
         return redirect(url_for('result'))
     answers = [question[2], question[3], question[4], question[5]]
@@ -38,7 +38,7 @@ def test():
     return render_template("test.html", question=question[1], answers=answers, question_id= question[0])
 
 def result():
-    return render_template("result.html", right=['answer'], total=['total'])
+    return render_template("result.html", right=session['answer'], total=session['total'])
 
 app = Flask(__name__, template_folder='', static_folder='')
 app.config["SECRET_KEY"] = "qweqwe123"
@@ -50,4 +50,4 @@ app.add_url_rule('/test', 'test', test, methods=["POST", "GET"])
 
 app.add_url_rule('/result', 'result', result)
 
-app.run(debug=False, port=5007)
+app.run(debug=True, port=5007)

@@ -1,37 +1,38 @@
 h1, h2, p{
     font-family: 'Lemon', serif;
-    color: #F99417;
+    color: #ffffff;
 
 }
+
+.size {
+    font-size: 35px;
+    background: -webkit-linear-gradient(90deg, rgba(252,235,70,1) 0%, rgba(251,118,107,1) 46%, rgba(217,34,143,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #363062;
+    background: -webkit-linear-gradient(90deg, rgba(113,29,176,1) 20%, rgba(255,167,50,1) 52%, rgba(194,18,146,1) 70%, rgba(239,64,64,1) 100%);
+    -webkit-liner-background-color: transparent;
 
-}
-
-button {
-    padding: 5px 20px;
-    background-color:  #4D4C7D;
-    border-color: #363062;
-    color: #F5F5F5;
-    border-radius: 20px;
 }
 
 select {
-    border-color: #363062;
+    border-color: #711DB0;
     padding: 10px 20px;
-    background-color:  #4D4C7D;
-    color: #F5F5F5;
+    background-color: #C21292 ;
+    color: #ffffff;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
 }
 
 header {
-    background-color: #4D4C7D;
+    background-color: #711DB0;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -48,14 +49,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://img.freepik.com/premium-photo/design-style-80s-futuristic-synthesizer-retro-wave-wallpaper-aigenerated_692702-16733.jpg);
+    background-image: url(https://img.freepik.com/free-vector/retro-futuristic-landscape-background-with-sun_52683-18844.jpg);
     background-size: cover;
+
 }
 
 a {
-    color:#F99417;
+    color:#EF4040;
     text-decoration: none;
-    background-color:#4D4C7D;
+    background-color:#711DB0;
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+u {
+    text-decoration-color: #FB8D6A;
+}
+
+.button {
+    padding: 5px 20px;
+    background-color:  #C21292;
+    border-color: #711DB0;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover {opacity: 0.8}

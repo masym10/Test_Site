@@ -15,7 +15,7 @@ quizes = [
 import sqlite3
 from random import randint
  
-db_name = 'quiz.sqlite'
+db_name = 'Quiz.sqlite'
 conn = None
 cursor = None
  
@@ -98,7 +98,7 @@ def add_links():
     cursor.execute('''PRAGMA foreign_keys=on''')
     query = "INSERT INTO quiz_content (quiz_id, question_id) VALUES (?,?)"
     
-    links=[[1,1], [1,2], [2,1], [2,2]]
+    links=[[1,1], [1,2], [2,3], [2,4]]
 
     for i in links:
         cursor.execute(query, [i[0], i[1]])

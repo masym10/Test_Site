@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <b><u><h1>Quiz</h1></u></b>
+        <b><u><h1 class="size">Quiz</h1></u></b>
     </header>
     <main>
         <form method="post", action="/test">
@@ -19,9 +19,9 @@
                 <form method="post" action="test">
                     <div class="column">
                     {% for ans in answers %}
-                    <p><input type="radio" value="{{ans}}" name="quiz" > {{ans}}</p>
+                    <p><input type="radio" value="{{ans}}" name="quiz"> {{ans}}</p>
                     {% endfor %}
-                    <button type="submit" class="button-9" role="button">Submit</button>
+                    <button type="submit" class="button" role="button">Submit</button>
                     </div>
                 </from>
             </div>
